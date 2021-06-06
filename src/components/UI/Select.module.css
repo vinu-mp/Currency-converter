@@ -1,0 +1,56 @@
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.selectWrapper {
+  position: relative;
+  width: 100%;
+  margin: 10px 15px;
+  flex-basis: 1;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: rgb(0, 108, 224);
+  box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+}
+
+.selectList {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+  border: 1px solid #ccc;
+  background: #fff;
+  max-height: 250px;
+  overflow-y: scroll;
+  z-index: 9;
+}
+
+.selectItem {
+  padding: 12px;
+}
+
+.selectItem:hover {
+  background: rgba(0,116,217,0.1);
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .selectWrapper {
+    flex-basis: 0;
+    min-width: 250px;
+  }
+}
